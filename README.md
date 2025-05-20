@@ -78,9 +78,8 @@ Npm start
     └── 📄 package.json              # Dependências e scripts do projeto
 
  ## Desenvolvido por
-Fabiola Falcão
+Fabiola Falcão **RM552715** TURMA 2TDSPB
 
-Rafael Novaes
+Rafael Novaes **RM 553934** TURMA 2TDSPB
 
-Carlos Henrique Nascimento
-
+Carlos Henrique Nascimento **RM 553597** TURMA 2TDSPR
