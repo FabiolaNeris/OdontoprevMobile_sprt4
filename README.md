@@ -18,12 +18,11 @@ Este é um aplicativo mobile para **agendamento de consultas odontológicas**, d
 ## 🛠 Tecnologias Utilizadas
 
 - [React Native](https://reactnative.dev/)
-- [Expo](https://expo.dev/) (se aplicável)
-- [Firebase](https://firebase.google.com/) (Firestore Database)
+- [Expo](https://expo.dev/)
+- [Firebase](https://firebase.google.com/) (Firestore Database, Auth)
 - [React Navigation](https://reactnavigation.org/) – Navegação por abas e drawer
 - [Date-fns](https://date-fns.org/) – Manipulação de datas
 - [Styled-components](https://styled-components.com/) – Estilização
-- [React Native Paper](https://callstack.github.io/react-native-paper/) ou similar – Componentes visuais (opcional)
 
 ## 📦 Instalação
 
