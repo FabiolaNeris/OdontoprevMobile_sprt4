@@ -55,6 +55,16 @@ Este é um aplicativo mobile para **prevenção de sinistros odontológicos**, d
 ### 4 - Inicie o app
 Npm start
 
+### Importante:
+O aplicativo foi testado e renderizado na web, por estar na versão expo 53 que atualmente é imcompatível com a autenticação do firebase.
+
+A funcionalidade de seleção de data [date picker] também pode ter a funcionalidade alterada de acordo com o dispositivo.
+
+Recomendamos fortemente que a aplicação seja testada na web, para isso, antes de rodar o projeto instale a seguinte dependência:
+  - Web
+   ```bash
+      npx expo install react-dom react-native-web @expo/metro-runtime
+
 ## Estrutura de diretórios
 - Projeto
   ```bash
