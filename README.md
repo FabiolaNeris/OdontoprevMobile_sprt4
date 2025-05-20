@@ -63,7 +63,7 @@ A funcionalidade de seleção de data [date picker] também pode ter a funcional
 Recomendamos fortemente que a aplicação seja testada na web, para isso, antes de rodar o projeto instale a seguinte dependência:
   - Web
     ```bash
-npx expo install react-dom react-native-web @expo/metro-runtime
+  npx expo install react-dom react-native-web @expo/metro-runtime
 
 ## Estrutura de diretórios
 - Projeto
