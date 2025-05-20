@@ -61,7 +61,8 @@ O aplicativo foi testado e renderizado na web, por estar na versão expo 53 que 
 A funcionalidade de seleção de data [date picker] também pode ter a funcionalidade alterada de acordo com o dispositivo.
 
 Recomendamos fortemente que a aplicação seja testada na web, para isso, antes de rodar o projeto instale a seguinte dependência:
-  - Web```bash
+  - Web
+    ```bash
 npx expo install react-dom react-native-web @expo/metro-runtime
 
 ## Estrutura de diretórios
