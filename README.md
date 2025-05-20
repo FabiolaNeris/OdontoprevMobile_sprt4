@@ -35,9 +35,9 @@ Este é um aplicativo mobile para **agendamento de consultas odontológicas**, d
   npm install -g expo-cli
 
 ### 1 - Clone o repositório
-  ``bash
- git clone https://github.com/FabiolaNeris/OdontoprevMobile_sprt4.git
-
+- Repositório  
+  ```bash
+  git clone https://github.com/FabiolaNeris/OdontoprevMobile_sprt4.git
 
 ### 2 - Instale as dependências
 yarn install
