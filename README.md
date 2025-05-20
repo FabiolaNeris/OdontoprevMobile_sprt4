@@ -48,9 +48,9 @@ Este é um aplicativo mobile para **prevenção de sinistros odontológicos**, d
 
 ### 3 - Configure o Firebase:
 
-Crie um projeto no Firebase
-Ative o Firestore Database
-Copie suas credenciais do Firebase e crie um arquivo firebaseConfig.js:
+- Crie um projeto no Firebase
+- Ative o Firestore Database
+- Copie suas credenciais do Firebase e crie um arquivo firebaseConfig.js:
 
 ### 4 - Inicie o app
 Npm start
@@ -58,27 +58,29 @@ Npm start
 ## Estrutura de diretórios
 - Projeto
   ```bash
-📦 Projeto
-├── 📁 app                     # Páginas e rotas com Expo Router
-│   ├── 📄 _layout.tsx            # Layout base com navegação (Stack/Tab)
-│   ├── 📄 index.tsx              # Tela inicial ou redirecionamento
-│   ├── 📄 home.tsx               # Tela principal após login/cadastro
-│   ├── 📄 cadastrarUsuario.tsx   # Tela de cadastro de usuário
-│   ├── 📄 perfil.tsx             # Tela de perfil do usuário
-│   ├── 📄 consultas.tsx          # Tela de listagem e gerenciamento de consultas
-│   └── 📄 captura.tsx            # Tela de captura de imagem (opcional)
-├── 📁 components              # Componentes reutilizáveis da interface
-│   ├── 📄 bottomTabBar.tsx       # Barra de navegação inferior personalizada
-│   ├── 📄 header.tsx             # Cabeçalho customizado com ícone/menu
-│   └── 📄 itemConsulta.tsx       # Card visual individual para exibir consultas
-├── 📁 services                # Integrações e utilitários externos
-│   └── 📄 firebaseConfig.tsx     # Configuração do Firebase (Firestore)
-├── 📁 assets                  # Imagens, ícones, fontes e outros recursos estáticos
-├── 📄 app.json / app.config.js  # Configurações do projeto Expo
-└── 📄 package.json              # Dependências e scripts do projeto
+    📦 Projeto
+    ├── 📁 app                     # Páginas e rotas com Expo Router
+    │   ├── 📄 _layout.tsx            # Layout base com navegação (Stack/Tab)
+    │   ├── 📄 index.tsx              # Tela inicial ou redirecionamento
+    │   ├── 📄 home.tsx               # Tela principal após login/cadastro
+    │   ├── 📄 cadastrarUsuario.tsx   # Tela de cadastro de usuário
+    │   ├── 📄 perfil.tsx             # Tela de perfil do usuário
+    │   ├── 📄 consultas.tsx          # Tela de listagem e gerenciamento de consultas
+    │   └── 📄 captura.tsx            # Tela de captura de imagem (opcional)
+    ├── 📁 components              # Componentes reutilizáveis da interface
+    │   ├── 📄 bottomTabBar.tsx       # Barra de navegação inferior personalizada
+    │   ├── 📄 header.tsx             # Cabeçalho customizado com ícone/menu
+    │   └── 📄 itemConsulta.tsx       # Card visual individual para exibir consultas
+    ├── 📁 services                # Integrações e utilitários externos
+    │   └── 📄 firebaseConfig.tsx     # Configuração do Firebase (Firestore)
+    ├── 📁 assets                  # Imagens, ícones, fontes e outros recursos estáticos
+    ├── 📄 app.json / app.config.js  # Configurações do projeto Expo
+    └── 📄 package.json              # Dependências e scripts do projeto
 
  ## Desenvolvido por
 Fabiola Falcão
+
 Rafael Novaes
+
 Carlos Henrique Nascimento
 
