@@ -4,6 +4,9 @@ import {useState} from 'react'
 import {auth} from '../services/firebaseConfig'
 import {createUserWithEmailAndPassword} from 'firebase/auth'
 import {useRouter} from 'expo-router'
+import AsyncStorage from '@react-native-async-storage/async-storage'
+import { db } from '../services/firebaseConfig'
+import { doc, setDoc } from 'firebase/firestore'
 
 export default function CadastrarUsuario(){
     const [nomeFocused, setNomeFocused] = useState(false);
@@ -18,10 +21,20 @@ export default function CadastrarUsuario(){
 
     const cadastrar = () => {
          createUserWithEmailAndPassword(auth, email, senha)
-            .then((userCredential) => {
+            .then(async(userCredential) => {
             // Logado 
             const user = userCredential.user;
+
+            await setDoc(doc(db, 'usuarios', user.uid),{
+              nome: nome,
+              email: email
+            })
+
+            await AsyncStorage.setItem('@user_nome', nome)
+            await AsyncStorage.setItem('@user', JSON.stringify(user))
+            
             console.log(user)
+
             router.push('/home')
           })
           .catch((error) => {

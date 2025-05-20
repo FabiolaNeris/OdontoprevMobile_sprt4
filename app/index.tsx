@@ -3,6 +3,8 @@ import {StyleSheet, Text, View, Image, TextInput, TouchableOpacity} from 'react-
 import {useState, useEffect} from 'react';
 import {Link, useRouter} from 'expo-router';
 import {auth} from '../services/firebaseConfig'
+import { db } from '../services/firebaseConfig';
+import { doc, getDoc } from 'firebase/firestore';
 import {signInWithEmailAndPassword} from 'firebase/auth'
 import AsyncStorage from '@react-native-async-storage/async-storage';
 
@@ -36,6 +38,15 @@ export default function App(){
         .then(async(userCredential) =>{
             //Logado
             const user = userCredential.user;
+
+            const docRef = doc(db, 'usuarios', user.uid);
+            const docSnap = await getDoc(docRef)
+
+            if(docSnap.exists()){
+                const nome = docSnap.data().nome
+                await AsyncStorage.setItem('@user_nome', nome)
+            }
+
             await AsyncStorage.setItem('@user', JSON.stringify(user))
             router.push('/home')
         })
