@@ -1,28 +1,28 @@
-# 📅 App de Agendamento de Consultas Odontológicas
+# 📅 Análise de sorrisos para prevenção de sinistros
 
-Este é um aplicativo mobile para **agendamento de consultas odontológicas**, desenvolvido em **React Native** com integração ao **Firebase Firestore**. A aplicação permite que usuários visualizem, agendem, remarquem e cancelem consultas com uma interface simples, bonita e funcional.
+Este é um aplicativo mobile para **prevenção de sinistros odontológicos**, desenvolvido em **React Native** com integração ao **Firebase Firestore**. A aplicação também permite que usuários visualizem, agendem, remarquem e cancelem consultas com uma interface simples, bonita e funcional.
 
 ## 🚀 Funcionalidades
 
-- 📋 Listagem de consultas futuras e passadas
-- 🗓️ Agendamento de novas consultas com escolha de:
-  - Clínica (lista suspensa)
-  - Data (calendário interativo)
-  - Horário (seleção customizada)
-- 🔄 Remarcação de consultas
-- ❌ Cancelamento de consultas
-- 💡 Destaque visual para diferenciar consultas futuras e passadas
-- 🔐 Autenticação com Firebase (caso aplicável)
-- 📱 Interface responsiva com navegação intuitiva
+- 📋 Visualização de consultas (futuras e passadas com diferenciação visual)
+- 🗓️ Agendamento com seleção de:
+  - Clínica (lista)
+  - Data (calendário)
+  - Horário
+- 🔄 Remarcação e ❌ cancelamento de consultas
+- 👤 Cadastro de usuário e tela de perfil
+- 📷 Captura de imagem
+- Navegação intuitiva com abas inferiores e cabeçalho personalizado
 
 ## 🛠 Tecnologias Utilizadas
 
 - [React Native](https://reactnative.dev/)
+- [Expo Router](https://expo.github.io/router/)
 - [Expo](https://expo.dev/)
 - [Firebase](https://firebase.google.com/) (Firestore Database, Auth)
-- [React Navigation](https://reactnavigation.org/) – Navegação por abas e drawer
 - [Date-fns](https://date-fns.org/) – Manipulação de datas
 - [Styled-components](https://styled-components.com/) – Estilização
+- [Expo Camera ](https://docs.expo.dev/versions/latest/sdk/camera/)
 
 ## 📦 Instalação
 
@@ -40,9 +40,11 @@ Este é um aplicativo mobile para **agendamento de consultas odontológicas**, d
   git clone https://github.com/FabiolaNeris/OdontoprevMobile_sprt4.git
 
 ### 2 - Instale as dependências
-yarn install
-#### ou
-npm install
+- Dependências
+  ```bash
+  yarn install
+  #ou
+  npm install
 
 ### 3 - Configure o Firebase:
 
@@ -53,4 +55,30 @@ Copie suas credenciais do Firebase e crie um arquivo firebaseConfig.js:
 ### 4 - Inicie o app
 Npm start
 
+## Estrutura de diretórios
+- Projeto
+  ```bash
+📦 Projeto
+├── 📁 app                     # Páginas e rotas com Expo Router
+│   ├── 📄 _layout.tsx            # Layout base com navegação (Stack/Tab)
+│   ├── 📄 index.tsx              # Tela inicial ou redirecionamento
+│   ├── 📄 home.tsx               # Tela principal após login/cadastro
+│   ├── 📄 cadastrarUsuario.tsx   # Tela de cadastro de usuário
+│   ├── 📄 perfil.tsx             # Tela de perfil do usuário
+│   ├── 📄 consultas.tsx          # Tela de listagem e gerenciamento de consultas
+│   └── 📄 captura.tsx            # Tela de captura de imagem (opcional)
+├── 📁 components              # Componentes reutilizáveis da interface
+│   ├── 📄 bottomTabBar.tsx       # Barra de navegação inferior personalizada
+│   ├── 📄 header.tsx             # Cabeçalho customizado com ícone/menu
+│   └── 📄 itemConsulta.tsx       # Card visual individual para exibir consultas
+├── 📁 services                # Integrações e utilitários externos
+│   └── 📄 firebaseConfig.tsx     # Configuração do Firebase (Firestore)
+├── 📁 assets                  # Imagens, ícones, fontes e outros recursos estáticos
+├── 📄 app.json / app.config.js  # Configurações do projeto Expo
+└── 📄 package.json              # Dependências e scripts do projeto
+
+ ## Desenvolvido por
+Fabiola Falcão
+Rafael Novaes
+Carlos Henrique Nascimento
 
