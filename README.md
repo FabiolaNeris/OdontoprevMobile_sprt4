@@ -56,7 +56,7 @@ Este é um aplicativo mobile para **prevenção de sinistros odontológicos**, d
 Npm start
 
 ### Importante:
-O aplicativo foi testado e renderizado na web, por estar na versão expo 53 que atualmente é imcompatível com a autenticação do firebase.
+O aplicativo foi testado e renderizado na web, por estar na versão expo 53 que atualmente é incompatível com a autenticação do firebase.
 
 A funcionalidade de seleção de data [date picker] também pode ter a funcionalidade alterada de acordo com o dispositivo.
 
