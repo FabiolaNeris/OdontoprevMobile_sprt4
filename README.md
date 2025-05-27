@@ -88,8 +88,8 @@ Recomendamos fortemente que a aplicação seja testada na web, para isso, antes 
     └── 📄 package.json              # Dependências e scripts do projeto
 
  ## Desenvolvido por
-Fabiola Falcão **RM552715** TURMA 2TDSPB
+Fabiola Falcão **RM552715** TURMA 2TDSPC
 
-Rafael Novaes **RM 553934** TURMA 2TDSPB
+Rafael Novaes **RM 553934** TURMA 2TDSPC
 
 Carlos Henrique Nascimento **RM 553597** TURMA 2TDSPR
